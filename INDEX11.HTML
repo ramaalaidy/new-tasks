@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Simple Survey</h1>
+    <form>
+        <!-- Part 1: Basic Information -->
+        <div>
+            <h2>Part 1: Basic Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <!-- Part 2: Preferences -->
+        <div>
+            <h2>Part 2: Preferences</h2>
+            <label for="hobby">What is your favorite hobby?</label>
+            <input type="text" id="hobby" name="hobby" placeholder="E.g., Reading, Sports">
+
+            <p>Do you like surveys?</p>
+            <label><input type="radio" name="survey" value="yes"> Yes</label>
+            <label><input type="radio" name="survey" value="no"> No</label>
+
+            <p>Which topics are you interested in? (Check all that apply)</p>
+            <label><input type="checkbox" name="topics" value="technology"> Technology</label>
+            <label><input type="checkbox" name="topics" value="sports"> Sports</label>
+            <label><input type="checkbox" name="topics" value="music"> Music</label>
+            <label><input type="checkbox" name="topics" value="travel"> Travel</label>
+        </div>
+
+        <!-- Part 3: Comments -->
+        <div>
+            <h2>Part 3: Comments</h2>
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here"></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

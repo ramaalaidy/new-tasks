@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل الطلاب</title>
+</head>
+<body>
+    <h1>نموذج تسجيل الطلاب</h1>
+    <p>مرحبًا بك في صفحة تسجيل الطلاب. يُرجى تعبئة النموذج أدناه للتسجيل في الدورات التي ترغب بها.</p>
+    
+    <h2>المعلومات الشخصية</h2>
+    <form>
+        <label for="name">الاسم الكامل:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="dob">تاريخ الميلاد:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label>الجنس:</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">أنثى</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">ذكر</label><br><br>
+        
+        <h2>اختيار الدورات</h2>
+        <p>يُرجى اختيار الدورات التي ترغب بالتسجيل فيها:</p>
+        <input type="checkbox" id="course1" name="courses" value="mathematics">
+        <label for="course1">الرياضيات</label><br>
+        <input type="checkbox" id="course2" name="courses" value="computer_science">
+        <label for="course2">علوم الحاسوب</label><br>
+        <input type="checkbox" id="course3" name="courses" value="physics">
+        <label for="course3">الفيزياء</label><br><br>
+        
+        <button type="submit">إرسال</button>
+        <button type="reset">إعادة تعيين</button>
+    </form>
+    
+    <h2>الدورات المتاحة</h2>
+    <table border="1">
+        <tr>
+            <th>معرف الدورة</th>
+            <th>اسم الدورة</th>
+            <th>المدرس</th>
+            <th>المدة</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>الرياضيات</td>
+            <td>د. سميث</td>
+            <td>6 أشهر</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>علوم الحاسوب</td>
+            <td>د. لي</td>
+            <td>6 أشهر</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>الفيزياء</td>
+            <td>د. جونسون</td>
+            <td>6 أشهر</td>
+        </tr>
+    </table>
+</body>
+</html>
